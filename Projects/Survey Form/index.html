@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="title">Tell Us About your experience</h1>
+        <p id="description">Rate your experience with Ngwenya Technologies and please give us tips on where to improve if need be.</p>
+    </header>
+
+    <main>
+        <h2>Fill this form</h2>
+
+        <form action="POST" id="survey-form">
+
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Full name" required> 
+
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="something@email.com" required>
+            
+            <label for="dropdown">Which service did you use?</label>
+            <select name="dropdown" id="dropdown" >
+                <option value="web-dev">Website Development</option>
+                <option value="app-dev">Application Development</option>
+                <option value="game-dev">Game Development</option>
+                <option value="web-fixes">Website Fixes</option>
+                <option value="cyber-security">Cyber Security</option>
+            </select>
+
+            <fieldset>
+                <legend>Which plan are you subscribed to?</legend>
+                <input type="radio" name="action" value="free"><label for="free">Free plan</label> <br>
+                <input type="radio" name="action" value="affordable"><label for="afforable">Affordable plan</label> <br>
+                <input type="radio" name="action" value="premium"><label for="premium">Premium plan</label> <br>
+            </fieldset>
+
+            <label for="number" id="number-label">Rate your experience <i>(1 being bad and 5 being outstanding)</i></label><br>
+            <input type="number" id="number" min="1" max="5" placeholder="5">
+
+            <fieldset>
+                <legend>Where can we improve?</legend>
+                <input type="checkbox" name="reply-rate" value="reply-rate"><label for="reply-rate">Reply rate</label><br>
+                <input type="checkbox" name="customer-int" value="customer-int"><label for="customer-int">Customer interaction</label><br>
+                <input type="checkbox" name="num-meet" value="num-meet"><label for="num-meet">Number of meetings</label><br>
+                <input type="checkbox" name="dev-process" value="dev-process"><label for="dev-process">Development process</label><br>
+                <input type="checkbox" name="product" value="product"><label for="product">Final product</label>Final product<br>
+            </fieldset>
+
+            <label for="comment">Leave a comment</label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+
+            <button id="submit">Submit</button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>Photo by <a href="https://unsplash.com/@erdaest?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Erda Estremera</a> on <a href="https://unsplash.com/s/photos/black-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            Photo by <a href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Annie Spratt</a> on <a href="https://unsplash.com/s/photos/black-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            Photo by <a href="https://unsplash.com/@vivivi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vita Vilcina</a> on <a href="https://unsplash.com/s/photos/black-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            Photo by <a href="https://unsplash.com/@a2eorigins?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alex Perez</a> on <a href="https://unsplash.com/s/photos/black-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+        </p>
+    </footer>
+</body>
+</html>

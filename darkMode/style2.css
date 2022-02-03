@@ -1,0 +1,33 @@
+body {
+    background-color: #494949;
+    color: #cccccc;
+}
+
+#hero h1 {
+    color: #cccccc;
+}
+
+.contact-cards {
+    box-shadow: 0 0 10px #cccccc;
+    margin: 2%;
+    width: 50%;
+    height: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3%;
+    border-radius: 20px;
+}
+
+.contact-cards h2 {
+    color: #1c9c98;
+}
+
+.contact-cards:hover {
+    box-shadow: none;
+}
+
+.contact-cards img {
+    width: 20%;
+    padding: 3%;
+}
