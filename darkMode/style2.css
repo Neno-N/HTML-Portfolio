@@ -9,13 +9,13 @@ body {
 
 .contact-cards {
     box-shadow: 0 0 10px #cccccc;
-    margin: 2%;
-    width: 50%;
+    margin: 1%;
+    width: 65%;
     height: 25%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 3%;
+    padding: 1%;
     border-radius: 20px;
 }
 
