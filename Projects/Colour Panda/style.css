@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #cccccc;
+}
+
+/* ------- Panda Container -------*/
+
+.panda {
+    margin: 8% 0;
+    width: 50vw;
+    height: 95vh;
+    position: relative;
+}
+
+/* ------- End of Panda Container -------*/
+
+nav {
+    box-shadow: 0px 0px 5px 2px #181818;
+    padding: 1%;
+    background-color: #cccccc;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* ------- Face ------- */
+
+#face {
+    position: relative;
+    width: 50%;
+    height: 30%;
+}
+
+.ears {
+    display: flex;
+    justify-content: space-between;
+    height: 25%;
+    width: 80%;
+    position: absolute;
+    top: -20%;
+    left: 10%;
+}
+
+.ear {
+    height: 100%;
+    width: 40%;
+    border-radius: 50%;
+    background-color: #181818;
+}
+
+.face {
+    width: 80%;
+    height: 75%;
+    background-color: #cccccc;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0px 0px 5px 3px #181818;
+}
+
+.eyes {
+    display: flex;
+    justify-content: space-around;
+    height: 30%;
+    width: 80%;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+.eye-patch {
+    height: 100%;
+    position: relative;
+    width: 33%;
+    border-radius: 50%;
+    background-color: #181818;
+}
+
+#patch-1::before {
+    content: "";
+    position: absolute;
+    right: 1%;
+    top: -10%;
+    height: 75%;
+    width: 85%;
+    border-radius: 50%;
+    background-color: #181818;
+}
+
+#patch-2::before {
+    content: "";
+    position: absolute;
+    left: 1%;
+    top: -10%;
+    height: 75%;
+    width: 85%;
+    border-radius: 50%;
+    background-color: #181818;
+}
+
+.eye {
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    background-color: #cccccc;
+    animation: blink 3s infinite;
+    position: absolute;
+    top: 10%;
+    right: 20%;
+}
+
+#eye-2 {
+    right: 0;
+    left: 20%;
+}
+
+.pupil {
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    background-color: #181818;
+    position: absolute;
+    top: 30%;
+    left: 32%;
+    animation: move 6s ease infinite;
+}
+
+.nose {
+    width: 18%;
+    height: 10%;
+    background-color: #181818;
+    position: absolute;
+    border-radius: 40%;
+    top: 53%;
+    left: 40%;
+}
+
+.mouth {
+    position: absolute;
+    bottom: 22.5%;
+    left: 40%;
+    width: 18%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.curve {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border-bottom: 2px solid #181818;
+}
+
+/* ------- End of Face ------- */
+
+/*------- Body -------*/
+
+#body {
+    position: relative;
+    top: -7%;
+    height: 30%;
+    width: 56%;
+    border-radius: 50%;
+    background-color: #cccccc;
+    box-shadow: 0px 0px 5px 3px #181818;
+}
+
+.arms{
+    height: 25%;
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.arm {
+    width: 25%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #181818;
+}
+
+.legs {
+    height: 30%;
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leg {
+    width: 25%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #181818;
+}
+
+.stomach {
+    position: relative;
+    top: 35%;
+}
+
+/*------- End Body -------*/
+
+/*-------Button-------*/
+
+#btn {
+    outline: none;
+    cursor: pointer;
+    padding: 3%;
+    border: none;
+    background-color: #cccccc;
+    box-shadow: 0px 0px 5px 3px #181818;
+    font-size: large;
+    border-radius: 10px;
+
+}
+
+#btn:hover {
+    background-color: #181818;
+    color: #cccccc;
+}
+
+/*-------End of Button-------*/
+
+/* ------- Animations ------- */
+@keyframes blink {
+    0% {
+        transform: scaleY(1);
+    }
+
+    15% {
+        transform: scaleY(.05);
+    }
+
+    25% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(1);
+    }
+
+    90% {
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+    
+}
+
+/*---Eye span animation ---*/
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-15px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
+    
+}
